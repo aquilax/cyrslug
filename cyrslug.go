@@ -69,10 +69,9 @@ func Slug(text string) string {
 	)
 	text = r.Replace(strings.ToLower(text))
 	var buffer bytes.Buffer
-	var o rune
-	for _, c := range text {
-		o = c
-		if (o >= 48 && o <= 57) || (o >= 97 && o <= 122) || o == 95 || o == 45 {
+	var c rune
+	for _, c = range text {
+		if (c >= 48 && c <= 57) || (c >= 97 && c <= 122) || c == 95 || c == 45 {
 			buffer.WriteRune(c)
 		}
 	}
