@@ -1,7 +1,7 @@
 /*
-Package cyrslug generates transliterated ascii slug from cyrilic titles
+Package cyrslug generates transliterated ascii slug from cyrillic titles
 
-Exaple:
+Example:
 
 	package main
 
@@ -22,7 +22,7 @@ import (
 	"strings"
 )
 
-// Slug functions transliterates the cyrilic text to ascii slug
+// Slug functions transliterates the cyrillic text to ascii slug
 func Slug(text string) string {
 	r := strings.NewReplacer(
 		"а", "a",
